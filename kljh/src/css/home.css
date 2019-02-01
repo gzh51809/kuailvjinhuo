@@ -1,0 +1,28 @@
+.footer{
+	position: fixed;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+    z-index: 10;
+}
+.footer ul{
+	width: 100%;
+}
+
+.footer ul li{
+	width: 20%;
+}
+.footer ul li:nth-child(even){
+	padding: 0 10px;
+}
+/* 图片的大小*/
+.pic{
+	display: block;
+	text-align: center;
+	padding-left:2vh;
+	font-size:3vh !important;
+}
+.navigation{
+	text-align: center;
+	line-height: 25px;
+}
