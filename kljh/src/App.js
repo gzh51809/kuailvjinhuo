@@ -1,7 +1,11 @@
 import React,{ Component } from 'react';
 import {Route,Switch,Redirect,withRouter} from 'react-router-dom';
 
-import Home from './components/Home/Home';
+//import { Button } from 'antd-mobile';
+
+
+import Home from './components/Home';
+import Search from './components/Home/Search'
 import Classify from './components/Classify/Classify';
 import Cars from './components/Cars/Cars';
 import Orderform from './components/Orderform/Orderform';
@@ -83,7 +87,8 @@ class App extends Component{
                </div>
               <Switch>
               	<Route path="/classify" component={Classify}/>
-                <Route exact path="/home" component={Home}/>
+                <Route  path="/home" component={Home}/>
+                <Route  path="/search" component={Search}/>
                 <Route path="/cars" component={Cars}/>
                 <Route path="/orderform" component={Orderform}/>
                 <Route path="/mine" component={Mine}/>
