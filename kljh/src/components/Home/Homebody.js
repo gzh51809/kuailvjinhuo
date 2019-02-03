@@ -1,42 +1,44 @@
 import React from 'react';
 import axios from 'axios'
-import { Carousel} from 'antd-mobile';
+import { Carousel } from 'antd-mobile';
 import '../../sass/home/homebody.scss'
 
-class Homebody extends React.Component{
-	
-	 constructor(){
-	 	super();
-	 	this.state={
-	 		 dataList:[],
-            categoryList:[],
-	 	}
-	 }
-	
-componentDidMount() {
-    axios.get("http://localhost:3334/",{
-					params:{
-						rq:"http://www.kuailvzaixian.com/wxmall/api/promotion/banner/list?cityId=440600&channel=1&_=1549120491634",
-						
-					}}).then(res=>{
-				let data=res.data.data.bannerList
-				console.log(data)
-				this.setState({
-					dataList:data,
-				})
-	})
-	axios.get("http://localhost:3334/",{
-					params:{
-						fenlei:"http://www.kuailvzaixian.com/wxmall/api/category/home/list?cityId=440600&_=1549129526460",
-					}}).then(res=>{
-						let data1=res.data.data.categoryList
-				console.log(res.data.data.categoryList)
-				this.setState({
-					categoryList:data1,
-				})
-	})
-}
-	render(){
+class Homebody extends React.Component {
+
+	constructor() {
+		super();
+		this.state = {
+			dataList: [],
+			categoryList: [],
+		}
+	}
+
+	componentDidMount() {
+		axios.get("http://localhost:3334/", {
+			params: {
+				rq: "http://www.kuailvzaixian.com/wxmall/api/promotion/banner/list?cityId=440600&channel=1&_=1549120491634",
+
+			}
+		}).then(res => {
+			let data = res.data.data.bannerList
+			console.log(data)
+			this.setState({
+				dataList: data,
+			})
+		})
+		axios.get("http://localhost:3334/", {
+			params: {
+				fenlei: "http://www.kuailvzaixian.com/wxmall/api/category/home/list?cityId=440600&_=1549129526460",
+			}
+		}).then(res => {
+			let data1 = res.data.data.categoryList
+			console.log(res.data.data.categoryList)
+			this.setState({
+				categoryList: data1,
+			})
+		})
+	}
+	render() {
 		return(
 			<div className="homebody">
 			<div className="carousel-list-container">
@@ -97,7 +99,46 @@ componentDidMount() {
 					</div>
 					</div>
 				</div>
-				
+				<div className="home-recommend">
+				<div className="title">为你推荐</div>
+					<div className="content"> 
+						
+						<div className="csu-card-container">
+							<div className="csu-card-content">
+							<div className="image-box-container">
+								<div className="image-box">
+								<img alt="" src="//p1.meituan.net/sjstpic/e956bf8337974bcbc95c9632c0c4335e183038.png.webp@180w_180h_1e_1c" />
+								</div>
+							</div>
+							
+							<div className="csu-info">
+								<div className="csu-name">
+						          [中鹏]冬瓜茶植物饮料250ml
+						        </div>
+						        <div className="csu-other-tag-group"></div>
+						        <div className="csu-info-bottom">
+						        <div className="csu-unit-desc">24盒*250ml/箱</div>
+						        <div className="csu-price-container">
+						        <div className="csu-price">
+						        <div className="visible-for-login">
+								  登录可见价格
+								</div>
+						        </div>
+						        <div className="csu-button-container">
+						        	<div className="csu-item-touch">
+						        	    <div className="csu-item-btn">
+						        	    	<img alt="" src={require('../../img/homeimg/jiahao.png')} />
+						        	    </div>
+						        	</div>
+						        </div>
+						        </div>
+						        </div>
+							</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 		)
 	}
