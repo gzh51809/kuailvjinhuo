@@ -10,6 +10,7 @@ class Homebody extends React.Component {
 		this.state = {
 			dataList: [],
 			categoryList: [],
+			goodlist:[],
 		}
 	}
 
@@ -35,6 +36,19 @@ class Homebody extends React.Component {
 			console.log(res.data.data.categoryList)
 			this.setState({
 				categoryList: data1,
+			})
+		})
+		
+		axios.get("http://localhost:3334/", {
+			params:{
+				tuijian:"http://www.kuailvzaixian.com/wxmall/api/goods/recommendation/list?cityId=440600&pageNo=1&pageSize=20&_=1549469017061"
+
+			}
+		}).then(res => {
+			let data2=res.data.data.goodsList
+			console.log(data2)
+			this.setState({
+				goodlist: data2,
 			})
 		})
 	}
@@ -103,14 +117,15 @@ class Homebody extends React.Component {
 				<div className="title">为你推荐</div>
 					<div className="content"> 
 						
-						<div className="csu-card-container">
+						{
+							this.state.goodlist.map((item,idx)=>(
+						<div className="csu-card-container" key={idx}>
 							<div className="csu-card-content">
 							<div className="image-box-container">
 								<div className="image-box">
-								<img alt="" src="//p1.meituan.net/sjstpic/e956bf8337974bcbc95c9632c0c4335e183038.png.webp@180w_180h_1e_1c" />
+								<img alt="" src={item.spuResVo.picUrls[0]} />
 								</div>
 							</div>
-							
 							<div className="csu-info">
 								<div className="csu-name">
 						          [中鹏]冬瓜茶植物饮料250ml
@@ -136,7 +151,9 @@ class Homebody extends React.Component {
 							</div>
 							</div>
 						</div>
-						
+							))
+						}
+						<div className="no-more">没有更多了哦～</div>
 					</div>
 				</div>
 			</div>
