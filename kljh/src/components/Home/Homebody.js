@@ -22,7 +22,7 @@ class Homebody extends React.Component {
 			}
 		}).then(res => {
 			let data = res.data.data.bannerList
-			console.log(data)
+//			console.log(data)
 			this.setState({
 				dataList: data,
 			})
@@ -33,7 +33,7 @@ class Homebody extends React.Component {
 			}
 		}).then(res => {
 			let data1 = res.data.data.categoryList
-			console.log(res.data.data.categoryList)
+//			console.log(res.data.data.categoryList)
 			this.setState({
 				categoryList: data1,
 			})
@@ -46,7 +46,7 @@ class Homebody extends React.Component {
 			}
 		}).then(res => {
 			let data2=res.data.data.goodsList
-			console.log(data2)
+//			console.log(data2)
 			this.setState({
 				goodlist: data2,
 			})
