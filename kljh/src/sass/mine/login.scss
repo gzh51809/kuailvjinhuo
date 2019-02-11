@@ -1,0 +1,124 @@
+.ant-tabs-nav .ant-tabs-tab-active{
+    color: #3dc6b6 !important;
+}
+.ant-tabs-nav .ant-tabs-tab{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #666;
+    width: 45%;
+    text-align: center;
+}
+.ant-tabs-ink-bar{
+    height: 0 !important;
+}
+.ant-tabs-nav{
+    width: 100%;
+}
+.ant-tabs-bar{
+    margin-bottom:0px !important;
+} 
+.ant-tabs-content-animated{
+    .ant-tabs-tabpane{
+        .content{
+            padding: 10px 0 12px;
+            .container{
+                margin: 0 20px;
+                .login-form{
+                    .field1{
+                            margin-bottom: 10px;
+                            padding-right: 150px;
+                            position: relative;
+                            box-sizing: border-box;
+                            width: 100%;
+                            display: inline-block;
+                            .phone__sms-code:focus{
+                                border: 1px solid #3dc6b6; 
+                            }
+                            .phone__sms-code{
+                                width: 100%;
+                                max-width: none;
+                                border: 1px solid #ccc;
+                                padding: 7px 32px 7px 10px;
+                                height: 40px;
+                                font-size: 14px;
+                                line-height: 24px;
+                                 outline:none;  
+                            }
+                            .yanzheng{
+                                right: 0px;
+                                width: 140px;
+                                color: #666;
+                                border-color: #ccc;
+                                background-color: #d9d9d9;
+                                position: absolute;
+                                top: 0;
+                                font-size: 14px;
+                                line-height: 24px;
+                                padding: 7px 0px;
+                                border-radius: 2px;
+                                text-align: center;
+                                margin-bottom: 0;
+                                border: 1px solid transparent;
+                            }
+                    }
+                   .field{
+                    margin-bottom: 10px;
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 100%; 
+                    .input_desc:focus{
+                      border: 2px solid #3dc6b6;  
+                    }
+                    .input_desc{
+                        width: 100%;
+                        max-width: none;
+                        padding: 9px 32px 5px;
+                        border: 1px solid #ccc;
+                        font-size: 14px;
+                        line-height: 24px;
+                        height: 40px;
+                        color: #333;
+                        font-family: inherit;
+                        font-weight: inherit;
+                          outline:none;  
+                    }
+                    .label__icon-desc{
+                        height: 40px;
+                        line-height: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 12px;
+                        color: #ccc;
+                    }
+                   }
+                   .login{
+                   width: 100%;
+                   color: #fff !important;
+                    border-color: #3dc6b6 !important;
+                    background-color: #3dc6b6 !important;
+                    font-size: 14px;
+                    line-height: 24px;
+                    padding: 7px 0px;
+                    border-radius: 2px;
+                    border: 1px solid transparent;
+                    background: 0 0;
+                    cursor: pointer;
+                    text-align: center;
+                   } 
+                }
+            }
+        }
+       .footer1{
+           padding-bottom: 20px;
+            overflow: hidden;
+            font-size: 12px;
+            .container{
+                float: right;
+                color: #3dc6b6;
+                margin: 0 20px;
+            }
+       } 
+    }
+}
+

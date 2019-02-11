@@ -6,10 +6,14 @@ import {Route,Switch,Redirect,withRouter} from 'react-router-dom';
 
 import Home from './components/Home';
 import Search from './components/Home/Search'
+
 import Classify from './components/Classify/Classify';
 import Cars from './components/Cars/Cars';
 import Orderform from './components/Orderform/Orderform';
 import Mine from './components/Mine/Mine';
+import Login from './components/Mine/Login';
+import Reg from './components/Mine/Reg'
+
 import { Menu, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import './css/home.css';
@@ -67,7 +71,7 @@ class App extends Component{
 	 render(){
         return (
         		<div>
-            <div className="footer">
+            <div className="footer" >
                 <Menu
                 mode="horizontal"
                 selectedKeys={[this.state.current]}
@@ -91,7 +95,9 @@ class App extends Component{
                 <Route  path="/search" component={Search}/>
                 <Route path="/cars" component={Cars}/>
                 <Route path="/orderform" component={Orderform}/>
-                <Route path="/mine" component={Mine}/>
+                <Route path="/mine" component={Mine} />
+                <Route path="/login" component={Login}/>
+                <Route path="/reg" component={Reg}/>
                 <Redirect from="/" to="/home"/>
                 </Switch>
           </div> 
