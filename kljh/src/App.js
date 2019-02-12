@@ -14,6 +14,8 @@ import Mine from './components/Mine/Mine';
 import Login from './components/Mine/Login';
 import Reg from './components/Mine/Reg'
 
+import List from './components/List/List'
+
 import { Menu, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import './css/home.css';
@@ -98,6 +100,7 @@ class App extends Component{
                 <Route path="/mine" component={Mine} />
                 <Route path="/login" component={Login}/>
                 <Route path="/reg" component={Reg}/>
+                <Route path="/list" component={List}/>
                 <Redirect from="/" to="/home"/>
                 </Switch>
           </div> 

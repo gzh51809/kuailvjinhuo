@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios'
 import { Carousel } from 'antd-mobile';
 import '../../sass/home/homebody.scss'
-
+import {NavLink} from 'react-router-dom';
 class Homebody extends React.Component {
 
 	constructor() {
@@ -119,7 +119,8 @@ class Homebody extends React.Component {
 						
 						{
 							this.state.goodlist.map((item,idx)=>(
-						<div className="csu-card-container" key={idx}>
+							<NavLink to="list" key={idx}>	
+						<div className="csu-card-container" >
 							<div className="csu-card-content">
 							<div className="image-box-container">
 								<div className="image-box">
@@ -128,11 +129,11 @@ class Homebody extends React.Component {
 							</div>
 							<div className="csu-info">
 								<div className="csu-name">
-						          [中鹏]冬瓜茶植物饮料250ml
+						         {item.spuResVo.spuTitle}
 						        </div>
 						        <div className="csu-other-tag-group"></div>
 						        <div className="csu-info-bottom">
-						        <div className="csu-unit-desc">24盒*250ml/箱</div>
+						        <div className="csu-unit-desc">{item.spuResVo.skuDescCombination}</div>
 						        <div className="csu-price-container">
 						        <div className="csu-price">
 						        <div className="visible-for-login">
@@ -151,6 +152,7 @@ class Homebody extends React.Component {
 							</div>
 							</div>
 						</div>
+						</NavLink>
 							))
 						}
 						<div className="no-more">没有更多了哦～</div>

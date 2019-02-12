@@ -1,0 +1,22 @@
+.orderform{
+    height: 100vh;
+    background-color: #f6f8fa;
+    position: relative;
+    .img-content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        img{
+            width: 4.48rem;
+            height: 4.48rem;
+            margin: 0 auto;
+        }
+        p{
+            margin-top: 2.00533333rem;
+            color: #999;
+            text-align: center;
+        }
+    }
+}
+

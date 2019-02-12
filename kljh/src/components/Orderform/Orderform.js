@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-
+import '../../sass/orderform/orderform.scss'
 class Orderform extends Component{
 	
 	constructor(){
@@ -11,7 +11,13 @@ class Orderform extends Component{
 	
 	render(){
 		return(
-			<div>Orderform</div>
+			<div className="orderform">
+			<div className="img-content">
+			<img alt="" src={require('../../img/homeimg/dingdankong.png')}/>
+			<p>暂无待付款订单</p>
+			</div>
+			
+			</div>
 		)
 	}
 }
