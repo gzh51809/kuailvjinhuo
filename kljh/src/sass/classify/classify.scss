@@ -1,0 +1,278 @@
+.classify{
+        height: 100vh;
+        background: #f8f8f8;
+       .category-page{
+           padding-bottom: 1.33333333rem;
+            position: relative;
+            min-height: 100%;
+            background: #fff;
+            .search-part{
+                position: fixed;
+                z-index: 400;
+                top: 0;
+                height: 1.17333333rem;
+                padding: .18666667rem 0;
+                width: 100%;
+                background: #fff;
+                .searchBar-part{
+                    margin: 0 .4rem;
+                    text-align: center;
+                    height: .8rem;
+                    line-height: .8rem;
+                    font-size: .32rem;
+                    background-color: #f6f8fa;
+                    .search{
+                        .icon-search{
+                            font-size: .34666667rem;
+                            margin-right: .16rem;
+                            color: #999;
+                            display: inline-block;
+                            font-family: klfont!important;
+                        }
+                        .search-placeholder{
+                            color: #999;
+                        }
+                    }
+                }
+            }
+            .category-level1{
+                position: fixed;
+                width: 100%;
+                z-index: 11;
+                top: 1.17333333rem;
+                height: 2.32rem;
+                background: #fff;
+                line-height: 0;
+                display: block;
+                box-sizing: border-box;
+                .nav-list{
+                    background-color: #fff;
+                    white-space: nowrap;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    padding: 0 .4rem;
+                    border-bottom-width: .5px;
+                    border-bottom: 1px solid #e7e7e7;
+                    .nav-item{
+                        font-weight: 700;
+                        position: relative;
+                        text-align: center;
+                        display: inline-block;
+                        max-width: 1.6rem;
+                        color: #333;
+                        font-size: .32rem;
+                        margin-right: .85333333rem;
+                        padding-top: .26666667rem;
+                        white-space: nowrap;
+                        .cate1-img{
+                            margin: 0 auto;
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            border-radius: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .cate-name{
+                                line-height: 1.5;
+                                padding: .13333333rem 0 .24rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-break: break-all;
+                                white-space: nowrap;
+                                word-wrap: normal;
+                        }
+                    }
+                }
+            }
+            
+        .Category-level2{
+            border-right-width: .5px;
+            background-color: #fff;
+            overflow-x: hidden;
+            position: fixed;
+            top: 3.49333333rem;
+            left: 0;
+            bottom: 1.30666667rem;
+            z-index: 9;
+            border-right: 1px solid #e7e7e7;
+            .nav2-list{
+                padding: 0 .4rem;
+                .nav2-item{
+                        color: #333;
+                        font-weight: 700;
+                        width: 1.49333333rem;
+                        padding-top: .4rem;
+                        margin-bottom: .4rem;
+                        font-size: .37333333rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        word-break: break-all;
+                        word-wrap: normal;
+                         border:none;
+                        img{
+                            display: inline-block;
+                            margin-right: .13333333rem;
+                            height: .37333333rem;
+                            vertical-align: middle;
+                           
+                        }
+                        span{
+                                color: #777;
+    
+                               
+                        }
+                }
+            }
+        }    
+          
+          .tags-part{
+                position: fixed;
+                top: 3.49333333rem;
+                height: 1.06666667rem;
+                line-height: 1.06666667rem;
+                width: 100%;
+                background: #fff;
+                z-index: 8;
+                .cate-second-name{
+                    border-width: .5px;
+                        border: 1px solid #fff;
+                        margin-left: 2.69333333rem;
+                        width: 2.66666667rem;
+                        font-size: .32rem;
+                        color: #333;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        word-break: break-all;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                }
+          } 
+         .csulist-main-content{
+                position: relative;
+                top: 4.56rem;
+                margin-left: 2.29333333rem;
+                padding-bottom: 1.30666667rem;
+                background: #fff;
+                .csu-content{
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    .csu-card-container{
+                        background-color: #fff;
+                        .csu-card-content{
+                                padding: .4rem .4rem 0;
+                                position: relative;
+                                overflow: hidden;
+                                .image-box-container{
+                                    width: 2rem;
+                                    height: 2rem;
+                                    float: left;
+                                    position: relative;
+                                    margin-right: .26666667rem;
+                                    margin-bottom: .4rem;
+                                    .image-box{
+                                        width: 2rem;
+                                        height: 2rem;
+                                        img{
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                        }
+                                    }
+                                }
+                                .csu-info{
+                                    .csu-name{
+                                        color: #333;
+                                        font-size: .37333333rem;
+                                        line-height: 1.2;
+                                        font-weight: 700;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        word-break: break-all;
+                                        white-space: nowrap;
+                                        word-wrap: normal;
+                                    }
+                                    .csu-other-tag-group{
+                                        position: relative;
+                                        line-height: .4rem;
+                                        margin-top: .05333333rem;
+                                    }
+                                    .csu-info-bottom{
+                                        border-bottom-width: .5px;
+                                        left: 2.66666667rem;
+                                        border-bottom: 1px solid #e7e7e7;
+                                        position: absolute;
+                                        padding-bottom: .4rem;
+                                        right: .4rem;
+                                        bottom: 0;
+                                        .csu-unit-desc{
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                word-break: break-all;
+                                                white-space: nowrap;
+                                                word-wrap: normal;
+                                                font-size: .32rem;
+                                                color: #666;
+                                                line-height: 1.3;
+                                                margin-bottom: .05333333rem;
+                                                max-width: 75%;
+                                        }
+                                        .csu-price-container{
+                                            position: relative;
+                                            .csu-price{
+                                                font-size: 0;
+                                                line-height: .8;
+                                                .visible-for-login{
+                                                    font-size: .34666667rem;
+                                                        color: #999;
+                                                        line-height: .48rem;
+                                                        height: .48rem;
+                                                        display: inline-block;
+                                                }
+                                            }
+                                            .csu-button-container{
+                                                position: absolute;
+                                                right: 0;
+                                                bottom: 0;
+                                                .csu-item-touch{
+                                                    position: absolute;
+                                                    right: -.26666667rem;
+                                                    bottom: -.26666667rem;
+                                                    width: 1.06666667rem;
+                                                    height: 1.06666667rem;
+                                                    .csu-item-btn{
+                                                            position: absolute;
+                                                            bottom: .26666667rem;
+                                                            right: .26666667rem;
+                                                            color: #fff;
+                                                            width: .53333333rem;
+                                                            height: .53333333rem;
+                                                            border-radius: 50%;
+                                                            font-size: .37333333rem;
+                                                            text-align: center;
+                                                            line-height: .53333333rem;
+                                                            -webkit-box-shadow: 1px 1px 4px 0 rgba(250,85,60,.5);
+                                                            box-shadow: 1px 1px 4px 0 rgba(250,85,60,.5);
+                                                            background-image: linear-gradient(121deg,#ff770d,#fa553c 65%);
+                                                            background-position: 0;
+                                                            img{
+                                                                height: 12px;
+                                                                width: 12px;
+                                                            }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                }
+         } 
+           
+       } 
+}
