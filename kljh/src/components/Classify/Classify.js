@@ -13,7 +13,15 @@ class Classify extends Component {
 			leibie: [],
 			content:[]
 		}
+		this.tolist=this.tolist.bind(this);
 	}
+	
+	tolist(e){
+		this.props.history.push("/list")
+	}
+	
+	
+	
 
 	componentDidMount() {
 		axios.get("http://localhost:3334/", {
@@ -101,7 +109,10 @@ class Classify extends Component {
 						<div className="csu-content">
 							{
 								this.state.content.map((item,idx)=>(
-							<div key={idx}>
+							<div
+							key={idx}
+						
+							>
 								<div className="csu-card-container">
 									<div className="csu-card-content">
 										
